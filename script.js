@@ -21,4 +21,14 @@ creatbored();
 
 fuction startgame() {
   currentsnake.foreach(undex=> squares[index].classlist.remove('snake'));
-  squares[appleindex].classlist.
+  squares[appleindex].classlist.remove('apple');
+  clearinteravl(timeid);
+}
+
+function move() {
+  const hitbottom = (currentsnake[0] + 20 >= 400 && direction === 20);
+  const hittop = (currentsnake[0] - 20 < 0 && direction === -20);
+  const hitright = (currentsnake[0] % 20 === 19 && direction === 1);
+  const hitleft = (currentsnake[0] % 20 === 0 && direction ===-1);
+  const hitself= sqaures[currentsnake[0] + direction]?classlist.contains('snake');
+}
