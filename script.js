@@ -17,3 +17,8 @@ function createbored() {
   }
 }
 creatbored();
+
+
+fuction startgame() {
+  currentsnake.foreach(undex=> squares[index].classlist.remove('snake'));
+  squares[appleindex].classlist.
