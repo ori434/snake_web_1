@@ -33,7 +33,7 @@ body {
 
 .snake{
     background-color: #22c55e; 
-    border-radius: 1px; 
+    bborder-radius: 1px; 
 }
 .apple{
     background-color: red; 
@@ -43,7 +43,6 @@ body {
 .controls { 
     margin: 15px 0; 
 }
-
 .arrow { 
     width: 60px; 
     height: 60px; 
@@ -58,9 +57,7 @@ body {
     transition: background 0.2s;
 }
 
-.arrow:active { 
-    background: #3e1f57;
-}
+.arrow:active { background: #3e1f57; }
 
 #start-btn {
     padding: 12px 30px; 
