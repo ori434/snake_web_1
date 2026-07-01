@@ -87,7 +87,7 @@ document.addEventListener('keydown', (e) => {
 });
 
 function endGame(){
-  gameover()
+  gameOver()
   return clearInterval(timerId);
 }
 
