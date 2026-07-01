@@ -10,7 +10,7 @@ body {
  }
 
  .game-container{
-    background:red;
+    background:rgb(0, 17, 255);
     padding: 20px;
     border-radius:20px;
     box-shadow:0 10px 25px rgba(0,0,0,0.1);
