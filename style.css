@@ -17,11 +17,11 @@ body {
     text-align: center; 
 }
 
-#grid {
+#grid {d
     display: grid;
     grid-template-columns: repeat(20, 1fr);
-    width:800px;
-    height: 800px;
+    width:1000px;
+    height:1000px;
     margin: 20px auto;
     background: rgb(153, 2, 153);
     border : 4px solid #bbf7d0;
