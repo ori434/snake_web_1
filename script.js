@@ -37,19 +37,20 @@ function move() {
   if (hitRight || hitBottom || hitTop || hit Left || hitSelf) {
     return clearInterval(timerId);
   }
+  const tail = currentSnake.pop();
+  squares[tail].classList.remove('snake');
+  const newHead = currentSnake[0] + direction;
 
-  conset
-
-
-}
-
-
-
-function generateapple() {
-  do {
-    appleindex = Math.floor(Math.random() * squares.length);
-  } while (squares[appleindex].classlist.contains('snake'));
-  squares[appleindex].classlist.add('apple');
+  if (squares[newHead].classList.contains('apple')) {
+    squares[newHead].classList.remove('apple');
+    squares[tail].classList.add('snake');
+    currentSnake.push(tail);
+    score++;
+    scoreDisplay.textContent = score;
+    generateApple();
+  }
+  currentSnake.unshift(newHead);
+  squares[newHead].classList.add('snake');
 }
 
 function changeDir(newdir) {
