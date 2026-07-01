@@ -38,7 +38,7 @@ body {
    transition: background 0.2s;
 }
 
-.arrow:active { background: #223483; ;}
+.arrow:active { background: #3e1f57;; ;}
 #start-btn {
   padding: 12px 30px; background:#16a34a
   color: white; border: none; border-radius: 8px;
