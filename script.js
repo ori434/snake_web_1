@@ -33,7 +33,17 @@ function move() {
   const hitright = (currentsnake[0] % 20 === 19 && direction === 1);
   const hitleft = (currentsnake[0] % 20 === 0 && direction ===-1);
   const hitself= sqaures[currentsnake[0] + direction]?.classlist.contains('snake');
+
+  if (hitRight || hitBottom || hitTop || hit Left || hitSelf) {
+    return clearInterval(timerId);
+  }
+
+  conset
+
+
 }
+
+
 
 function generateapple() {
   do {
