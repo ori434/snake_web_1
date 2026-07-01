@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(120, 35, 201);
+    background-color: rgb(201, 35, 201);
     color: rgb(255, 255, 255);
     font-family: sans-serif;
     display: flex;
@@ -13,7 +13,7 @@ body {
     background: rgb(228, 20, 255);
     padding: 20px;
     border-radius: 20px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+   box-shadow: 0 10px 25px rgb(0, 0, 0);
     text-align: center; 
 }
 
