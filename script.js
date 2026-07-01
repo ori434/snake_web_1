@@ -8,6 +8,7 @@ let score = 0;
 let timerid = 0;
 let intervaltime = 200;
 
+function endgame () {
 
 function createbored() {
   for (let i = 0; i < 400; i++) {
