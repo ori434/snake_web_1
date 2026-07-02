@@ -18,6 +18,7 @@ function createBoard() {
 createBoard();
 
 function startGame() {
+  backGMusic();
   currentSnake.forEach(index => squares[index].classList.remove('snake'));
   squares[appleIndex].classList.remove('apple');
   clearInterval(timerId);
@@ -50,8 +51,10 @@ function move() {
   currentSnake.unshift(currentSnake[0] + direction);
 
   if (currentSnake[0] === appleIndex) {
+    eatM();
     squares[appleIndex].classList.remove('apple');
     currentSnake.push(tail);
+
     squares[tail].classList.add('snake');
     
     generateApple();
@@ -87,18 +90,20 @@ document.addEventListener('keydown', (e) => {
 });
 
 function endGame(){
-  gameOver()
+  gameOver();
   return clearInterval(timerId);
 }
 
-const backgroundmusic = new Audio('assets/bg music.mp3');
+const backgroundmusic = new Audio('assets/bgmusic.mp3');
 const eat = new Audio('assets/eat.mp3');
 const GameOver = new Audio('assets/endgamemusic.mp3');
+
 function backGMusic(){
   backgroundmusic.play();
 }
-function eat(){
+function eatM(){
   eat.currentTime = 0;
+  eat.play();
 }
 function gameOver(){
   backgroundmusic.pause();
